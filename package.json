@@ -9,7 +9,12 @@
   "scripts": {
     "build": "tsc",
     "dev": "yarn build && node ./.output/index.js",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "uno": "standard-version --first-release",
+    "release": "standard-version",
+    "release:minor": "standard-version --release-as minor",
+    "release:patch": "standard-version --release-as patch",
+    "release:major": "standard-version --release-as major"
   },
   "author": {
     "email": "<your email here>",
